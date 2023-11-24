@@ -1,0 +1,9 @@
+<div class="min-h-screen flex flex-col items-center justify-center h-full w-full bg-[#d5ff3f] px-12">
+    <div *ngIf="!isIdentified">
+        <p class="text-[3rem] font-Francois">Cannot find metamask</p>
+    </div>
+    <button *ngIf="isIdentified && !isConnected">Connect</button>
+    <div *ngIf="isConnected">
+        Im connected
+    </div>
+</div>
