@@ -1,15 +1,15 @@
-<main class="min-h-screen h-full w-full bg-[#d5ff3f] px-12">
+<main class="min-h-screen h-full w-full bg-black overflow-x-hidden">
   <Navbar />
-  <div class="flex min-h-screen">
+  <section class="flex md:px-12 h-full w-full bg-[#d5ff3f]">
     <div class="flex">
-      <div class="">
+      <div class="pb-[100px]">
         <div class="w-[70%] text-[8rem] leading-none font-bold">..</div>
         <div class="w-[90%] flex items-center justify-between">
           <div class="text-[12rem] font-black leading-none">SOMETHING</div>
-          <div class=" w-[450px] h-32 bg-gray-300 rounded-full overflow-hidden">
+          <div class="w-[450px] h-32 bg-[#d5ff3f] rounded-full overflow-hidden">
             <img
-              class=" object-contain"
-              src="https://images.pexels.com/photos/2693208/pexels-photo-2693208.png"
+              class="object-contain"
+              src="https://c4.wallpaperflare.com/wallpaper/1005/436/990/black-splash-abstract-wallpaper-preview.jpg"
               alt="stock image"
             />
           </div>
@@ -18,42 +18,89 @@
         <div class="w-full flex">
           <div class="w-[70%] text-[12rem] font-black leading-none">SMTHNG</div>
           <div
-            class="w-[45%] mx-auto font-Francois items-end text-3xl py-12 tracking-widest"
+            class="w-[45%] mx-auto font-Montserrat items-end text-3xl py-12 tracking-widest"
           >
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
             molestiae dignissimos, aperiam quis nihil reiciendisasdasdasdsss
           </div>
         </div>
-        <div class="flex gap-3 ">
-            <button class="w-[200px]  text-2xl bg-transparent  text-black f py-2 px-4 border border-black  rounded-full">
-                Something
-              </button>
-              
-              <button class="w-[200px] text-2xl bg-transparent  text-black py-2 px-4 border border-black  rounded-full">
-                Something
-              </button>
-              <div class="w-full bg-black w-1"></div>
+        <div class="flex gap-3">
+          <button
+            class="w-[200px] text-2xl bg-transparent text-black f py-2 px-4 border border-black rounded-full"
+          >
+            Something
+          </button>
+
+          <button
+            class="w-[200px] text-2xl bg-transparent text-black py-2 px-4 border border-black rounded-full"
+          >
+            Something
+          </button>
+          <div class="w-full h-[2px] bg-neutral-700 opacity-25 my-5"></div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <section class="mt-10 flex flex-col items-center">
-    <img
-      class="w-[80%] rounded-t-[200px]"
-      src="https://images.pexels.com/photos/2693208/pexels-photo-2693208.png"
-      alt="stock image"
-    />
-    <div class="max-w-full h-[130%]">
-      <div class="flex flex-wrap gap-[1rem] ">
-        <p>Something</p>
-        <p>Something</p>
-        <p>Something</p>
-        <p>Something</p>
-        <p>Something</p>
-        <p>Something</p>
-        <p>Something</p>
+  <section class="pt-10 flex flex-col items-center bg-[#d5ff3f]">
+    <div class="w-[90%] h-[550px] overflow-hidden">
+      <img
+        class="rounded-t-[200px]"
+        src="https://static.vecteezy.com/system/resources/previews/002/431/892/original/black-and-white-abstract-marble-texture-monochrome-abstract-background-illustration-vector.jpg"
+        alt="stock image"
+      />
+    </div>
+  </section>
+
+  <section class="h-full bg-[#171717] px-12 pt-10">
+    <div class="flex">
+      <div class="w-[60%]">
+          <h1 class="text-[#c4c4c4] text-[6rem]">Some Header<span class="text-[#d5ff3f] text-[7rem] font-bold"
+            >.</span
+          ></h1>
+        <p class="text-[#545454] text-3xl">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius,
+          architecto similique, laborum placeat praesentium impedit ipsa aperiam
+          repellat, molestias reiciendis id ullam? Sit ea deserunt, provident
+          vitae dicta veniam minus.
+        </p>
+      </div>
+      <div class="w-[40%] flex gap-[1rem] flex-wrap h-[100px] justify-center self-end">
+       <TagComp text="short tag"/>
+       <TagComp text="looooooooog tag"/>
+       <TagComp text="looooooooog tag"/>
+       <TagComp text="short tag"/>
       </div>
     </div>
+  </section>
+
+  <section class="h-full bg-[#171717] px-12">
+    <Dropdown
+  </section>
+
+  <section class="bg-[#171717] h-screen p-20">
+    <div
+      class="flex items-center text-center w-full h-full bg-[#292929] text-[#a2a2a2] text-[6.5rem] font-Montserrat p-10"
+    >
+      LOREM IPSUM, DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT. TEMPORA
+      MOLESTIAE DIGNISSIMOS, APERIAM QUIS NIHIL REICIENDISASDASDASDSSS
+    </div>
+  </section>
+  <section id="Portfolio" class="w-full min-h-screen bg-[#171717] px-10">
+    <div class="flex flex-col w-full">
+      <div class="text-[#a2a2a2] text-[7rem] font-bold">
+        OUR COLLECTION<span class="text-[#d5ff3f] text-[7rem] font-bold"
+          >.</span
+        >
+      </div>
+      <div class="w-full h-full">
+        <div>
+            <NftBox/>
+        </div>
+
+      </div>
+    </div>
+
+    
   </section>
 </main>

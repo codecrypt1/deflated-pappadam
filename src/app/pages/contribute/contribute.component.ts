@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ethers } from 'ethers';
+import { provideIcons } from '@ng-icons/core';
+import { octNorthStar, octStar } from '@ng-icons/octicons';
 
 @Component({
   selector: 'app-contribute',
@@ -8,8 +10,12 @@ import { ethers } from 'ethers';
   imports: [CommonModule],
   templateUrl: './contribute.component.html',
   styleUrl: './contribute.component.css',
+  viewProviders: [provideIcons({ octNorthStar, octStar })]
 })
 export class ContributeComponent implements OnInit {
+  @ViewChild('amount', { static: false })
+  amount!: ElementRef;
+
   readonly METAMASK_KEY: string = 'metamask';
   public isIdentified: boolean = false;
   public ethereum: any;
@@ -51,6 +57,11 @@ export class ContributeComponent implements OnInit {
 
   private connected() {
     this.isConnected = true;
+  }
+
+  onBlur(event: any) {
+    console.log("blurred");
+    this.amount.nativeElement.focus()
   }
 
   public async connectMetamask() {

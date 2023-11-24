@@ -1,9 +1,16 @@
 <div class="min-h-screen flex flex-col items-center justify-center h-full w-full bg-[#d5ff3f] px-12">
     <div *ngIf="!isIdentified">
-        <p class="text-[3rem] font-Francois">Cannot find metamask</p>
+        <p class="text-[3rem] font-Montserrat font-semibold">Cannot find metamask</p>
     </div>
     <button *ngIf="isIdentified && !isConnected">Connect</button>
-    <div *ngIf="isConnected">
-        Im connected
+    <div class="text-center" *ngIf="isConnected">
+        <h2 class="text-2xl font-Montserrat">Enter The Amount</h2>
+        <div class="flex items-center font-Francois gap-2 text-5xl">
+            <p>₹</p>
+            <input (blur)="onBlur($event)" class="bg-transparent border-transparent focus:border-transparent focus:ring-0 !outline-none text-7xl font-semibold border-none" type="number" min="0" max="1000" #amount>
+        </div>
+        <button class="w-[200px] mt-10  text-2xl bg-black  text-[#d5ff3f] py-2 px-4 border border-black  rounded-[10px]">
+            Contribute
+        </button>
     </div>
 </div>
