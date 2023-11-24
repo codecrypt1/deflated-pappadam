@@ -1,7 +1,9 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Montserrat:wght@100&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 
 @layer base {
     input[type="number"]::-webkit-inner-spin-button,
@@ -11,5 +13,17 @@
     }
   }
   
-@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Montserrat:wght@100&display=swap');
+
+
+body::-webkit-scrollbar {
+  width: 25px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #171717;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #e6e6e6;    /* color of the scroll thumb */
+}
 

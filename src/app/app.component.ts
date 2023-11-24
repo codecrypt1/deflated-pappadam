@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { NgIconsModule } from '@ng-icons/core';
+import { NgIconComponent, NgIconsModule, provideIcons } from '@ng-icons/core';
 import { octNorthStar } from '@ng-icons/octicons';
 
 @Component({
