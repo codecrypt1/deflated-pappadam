@@ -20,3 +20,13 @@ Database   : FireStore <br />
 ## Execution 
 
 The blockchain network has been hosted on the Polygon Mumbai Test Network, by utilizing Solidity as the medium for contract deployment.
+The website is hosted on vercel
+
+## Source Code 
+
+https://github.com/Deflated-Pappadam/Hear-Us 
+
+## Other links 
+
+MarketPlace : https://testnets.opensea.io/collection/hearus
+
