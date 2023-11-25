@@ -4,7 +4,7 @@ This project was built during the 24 hour hackathon, CodeCrypt, organized by CUS
 
 ## Idea
 
-The project is essentially a blockchain based, NFT driven donation platform where we create a scenario where both the benefactors and recipient gets maximum advantage over every single donation made.
+The project is essentially a blockchain based, NFT driven donation platform where we create a scenario in which both the benefactors and recipient gets maximum advantage over every single donation made.
 
 ## Stack Implementation
 
