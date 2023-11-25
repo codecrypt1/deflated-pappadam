@@ -14,18 +14,19 @@ import { CommonModule } from '@angular/common';
         class="w-[40%] flex text-xl font-extralight text-black justify-between items-center"
       >
         
-          <a href="#home" class="hover:scale-105 duration-300 cursor-pointer"
-            >Home</a
-          >
+         
           <a href="#about" class="hover:scale-105 duration-300 cursor-pointer"
             >About</a
           >
+          
           <a
             href="#Portfolio"
             class="hover:scale-105 duration-300 cursor-pointer"
-            >Collections</a
+            >Sneak Peak</a
           >
-     
+          <a href="https://testnets.opensea.io/collection/hearus/overview" class="hover:scale-105 duration-300 cursor-pointer"
+            >Collection</a
+          >
 
         <a
           href="/contribute"
