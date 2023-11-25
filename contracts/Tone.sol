@@ -4,7 +4,7 @@ pragma solidity ^0.8.9;
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "erc721a/contracts/ERC721A.sol";
 
-contract Haven is ERC721A, Ownable {
+contract Tone is ERC721A, Ownable() {
     uint256 public maxSupply;
     uint256 public tokenPrice = 1 gwei;
     string private _baseTokenURI;
@@ -62,7 +62,7 @@ contract Haven is ERC721A, Ownable {
 	// OVERRIDE FUNCTIONS
 	function tokenURI(uint256 tokenId) public view virtual override returns (string memory) {
 		require(_exists(tokenId), 'Token does not exist');
-		return string(abi.encodePacked(_baseTokenURI, _toString(tokenId), ".mp3"));
+		return string(abi.encodePacked(_baseTokenURI, _toString(tokenId)));
 	}
 
     function _baseURI() internal view override returns (string memory) {

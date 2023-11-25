@@ -1,4 +1,4 @@
-import { Component, NO_ERRORS_SCHEMA, OnInit } from '@angular/core';
+import { Component, ElementRef, NO_ERRORS_SCHEMA, OnInit, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { TagCompComponent } from '../../components/tag-comp/tag-comp.component';
@@ -20,6 +20,24 @@ import 'aos/dist/aos.css';
 })
 
 export class HomepageComponent implements OnInit {
+
+   
+  musicSource = 'https://storage.googleapis.com/here-us-ebe72.appspot.com/music/1.wav';
+  @ViewChild('audioPlayer') audioPlayerRef!: ElementRef;
+
+  get audioPlayer(): HTMLAudioElement {
+    return this.audioPlayerRef.nativeElement;
+  }
+
+  playMusic() {
+    this.audioPlayer.play();
+  }
+
+  stopMusic() {
+    this.audioPlayer.pause();
+    this.audioPlayer.currentTime = 0;
+  }
+
 
   constructor(public router: Router) { }
   ngOnInit(): void {

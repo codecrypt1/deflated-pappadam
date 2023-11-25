@@ -13,7 +13,9 @@
     }
   }
   
-
+html, body {
+    scroll-behavior: smooth;
+  }
 
 body::-webkit-scrollbar {
   width: 25px;               /* width of the entire scrollbar */

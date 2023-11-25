@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -14,8 +14,11 @@ import { CommonModule } from '@angular/common';
         <div
           class="group-hover:scale-[150%] ease-in-out duration-1000  transition-all"
         >
+          <audio class="hidden" id="player" #audio src={{audio_src}}></audio>
           <img
-            src="../../assets/bg.jpg"
+            (mouseover)="playAudio()"
+            (mouseleave)="pauseAudio()"
+            src={{url}}
             width="{900}"
             height="{900}"
             alt=""
@@ -26,12 +29,12 @@ import { CommonModule } from '@angular/common';
       <div
         class="  flex  justify-between items-center "
       >
-        <div class="flex items-center rounded-b-md p-4 text-white text-3xl">
+        <div class="flex items-center rounded-b-md p-4 text-white text-2xl">
          {{Name}}
         </div>
-        <div class="border border-white p-2 text-white items-center  rounded-lg m-2 ">#{{Id}}</div>
+        <div class="border border-white p-2 px-3  text-white items-center  rounded-lg m-2 ">#{{Id}}</div>
       </div>
-      <div class="border-white px-5 pb-2 text-white items-center text-xl">{{Price}}ETH</div>
+      <div class="border-white px-5 pb-2 text-gray-400 items-center text-lg"> {{Price}}</div>
     </div>
 
 
@@ -39,8 +42,18 @@ import { CommonModule } from '@angular/common';
   styleUrl: './nft-box.component.css',
 })
 export class NftBoxComponent {
-  @Input() Name :string ="Item 01"
+  @Input() Name :string ="Whispers In The Rain"
   @Input() Id :string  ="oXoX"
   @Input() Price :string  ="091"
+  @Input() url:string ="https://storage.googleapis.com/here-us-ebe72.appspot.com/Image/0.png"
+  @Input() audio_src:string = "https://storage.googleapis.com/here-us-ebe72.appspot.com/music/0.wav"
+  @ViewChild('audio') audioPlayerRef!: ElementRef;
  
+  playAudio() {
+    this.audioPlayerRef.nativeElement.play()
+  }
+
+  pauseAudio() {
+    this.audioPlayerRef.nativeElement.pause()
+  }
 }
