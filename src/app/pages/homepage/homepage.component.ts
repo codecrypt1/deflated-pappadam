@@ -9,11 +9,14 @@ import { FooterComponent } from '../../components/footer/footer.component';
 import { Router } from '@angular/router';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { NgIconComponent, provideIcons } from '@ng-icons/core';
+import { octNorthStar } from '@ng-icons/octicons';
 
 @Component({
   selector: 'app-homepage',
   standalone: true,
-  imports: [CommonModule,NavbarComponent,TagCompComponent,NftBoxComponent,DropDownComponent,FooterComponent],
+  imports: [CommonModule,NavbarComponent,TagCompComponent,NftBoxComponent,DropDownComponent,FooterComponent, NgIconComponent],
+  viewProviders: [provideIcons({ octNorthStar })],
   schemas: [NO_ERRORS_SCHEMA],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.css'

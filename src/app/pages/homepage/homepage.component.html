@@ -1,7 +1,7 @@
 <main class="min-h-screen h-full w-full bg-black overflow-x-hidden">
   <Navbar />
-  <section id="home" class="flex h-full w-full bg-[#d5ff3f] md:px-12">
-    <div class="flex">
+  <section id="home" class=" flex h-full w-full bg-[#d5ff3f] md:px-12">
+    <div class="relative flex">
       <div class="pb-[100px]">
         <div
           class="flex gap-3 w-[70%] text-[8rem] leading-none font-bold"
@@ -35,7 +35,7 @@
             savoring life as it unfolds.
           </div>
         </div>
-        <div class="flex gap-3">
+        <div class="relative flex gap-3">
           <button
             class="w-[200px] text-2xl bg-transparent cursor-default text-black f py-2 px-4 border border-black rounded-full"
           >
@@ -47,6 +47,8 @@
           >
             Expansive
           </button>
+          <ng-icon class="absolute animate-spin top-[45px] right-0 text-5xl z-10" name="octNorthStar"></ng-icon>
+          <ng-icon class="absolute animate-spin top-[45px] right-20 text-5xl" name="octNorthStar"></ng-icon>
           <div class="w-full h-[2px] bg-neutral-700 opacity-25 my-5"></div>
         </div>
       </div>
