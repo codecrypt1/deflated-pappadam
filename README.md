@@ -14,8 +14,8 @@ Database   : FireStore <br />
 
 ## Assests
 
-> Images for the NFTs are generated via the **Deliberate v3.0 model**, executed via **Stable Diffusion**, by incorporating a custom script that enables us to modify the model to our will and satisfaction, thus enabling us to take maximum advantage of it. <br /><br /><br />
-> The Audio files for the NFTs are generated via the **music-gen/small** model provided by **Facebook**. We have utilized our own script to generate custom, themed tunes that serve justice to our theme.
+> Images for the NFTs are generated via a model created on top of **Deliberate v3.0 model**, executed via **Stable Diffusion**, by incorporating a custom script that enables us to modify the model to our will and satisfaction, thus enabling us to take maximum advantage of it. <br /><br /><br />
+> The Audio files for the NFTs are generated from a model inspired from the **music-gen/small** model provided by **Facebook**. We have utilized our own script to generate custom, themed tunes that serve justice to our theme.
 
 ## Execution 
 
