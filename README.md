@@ -1,27 +1,22 @@
-# Codecrypt
+# HearUs
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.3.
+This project was built during the 24 hour hackathon, CodeCrypt, organized by CUSAT
 
-## Development server
+## Idea
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The project is essentially a blockchain based, NFT driven donation platform where we create a scenario where both the benefactors and recipient gets maximum advantage over every single donation made.
 
-## Code scaffolding
+## Stack Implementation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Front-End  : Angular JS <br />
+Back-End   : Node JS <br />
+Database   : FireStore <br />
 
-## Build
+## Assests
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+> Images for the NFTs are generated via the **Deliberate v3.0 model**, executed via **Stable Diffusion**, by incorporating a custom script that enables us to modify the model to our will and satisfaction, thus enabling us to take maximum advantage of it. <br /><br /><br />
+> The Audio files for the NFTs are generated via the **music-gen/small** model provided by **Facebook**. We have utilized our own script to generate custom, themed tunes that serve justice to our theme.
 
-## Running unit tests
+## Execution 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+The blockchain network has been hosted on the Polygon Mumbai Test Network, by utilizing Solidity as the medium for contract deployment.
