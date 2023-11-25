@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { N,ethers } from 'ethers';
 import { provideIcons } from '@ng-icons/core';
 import { octNorthStar, octStar } from '@ng-icons/octicons';
-import Tone from '../../../../artifacts/contracts/Tone.sol/Tone.json'
+import Tone from '../../../abi/Tone.json'
 
 
 @Component({
