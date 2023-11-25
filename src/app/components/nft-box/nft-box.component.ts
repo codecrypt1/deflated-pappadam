@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
   imports: [CommonModule],
   template: `
     <a
-      class="group md:min-w-[10rem] max-w-[20rem] max-h-[20rem] bg-[#292929] hover:bg-[#3d3d3d] flex flex-col border-2  border-black m-10  w-full h-full rounded-2xl overflow-hidden "
+      class="group md:min-w-[10rem] max-w-[20rem] max-h-[20rem] bg-[#292929] hover:bg-[#3d3d3d] flex flex-col border-2  border-black m-10  w-full h-full rounded-2xl overflow-hidden card"
       href="https://testnets.opensea.io/collection/hearus?search[sortAscending]=false&search[sortBy]=CREATED_DATE"
     >
       <div class="img w-[100%] h-[180%] bg-black overflow-hidden  ">
@@ -48,6 +48,7 @@ import { CommonModule } from '@angular/common';
   `,
   styleUrl: './nft-box.component.css',
 })
+
 export class NftBoxComponent {
   @Input() Name: string = 'Whispers In The Rain';
   @Input() Id: string = 'oXoX';
