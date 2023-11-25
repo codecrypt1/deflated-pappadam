@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
     >
       <div class="w-[50%] text-2xl text-black font-bold">HearUs.</div>
       <div
-        class="w-[40%] flex text-xl font-extralight text-black justify-between"
+        class="w-[40%] flex text-xl font-extralight text-black justify-between items-center"
       >
         
           <a href="#home" class="hover:scale-105 duration-300 cursor-pointer"
@@ -29,13 +29,12 @@ import { CommonModule } from '@angular/common';
 
         <a
           href="/contribute"
-          class="w-[150px] text-xl  text-white bg-black py-1  px-2 border border-black rounded-full items-center justify-center text-center"
+          class="w-[130px] flex text-xl hover:scale-105 duration-300 hover:bg-slate-900  text-white bg-black py-2  px-1 border border-black rounded-full items-center justify-center text-center"
         >
           Contribute
         </a>
       </div>
     </div>
   `,
-  styleUrl: './navbar.component.css',
 })
 export class NavbarComponent {}
