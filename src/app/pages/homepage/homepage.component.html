@@ -13,7 +13,7 @@
           <div data-aos='fade-right' class="md:text-[9rem] font-black leading-none">BELAUDING</div>
 
           <div
-            class="w-[450px] h-32 bg-[#d5ff3f] rounded-full overflow-hidden mx-[3%]"
+            class="w-[450px] h-32 bg-[#d5ff3f] rounded-full overflow-hidden mx-[4%]"
           >
             <img
               data-aos='fade' data-aos-delay="400"
@@ -125,8 +125,8 @@ The Collection operates on the <span class="text-[#d5ff3f]">Multi-Ended Mutually
   
 
   <section id='quote' class="bg-[#171717] h-screen p-20">
-    <div
-      class="flex items-center text-center w-full h-full bg-[#292929] text-[#a2a2a2] text-[4.6rem] font-Montserrat p-10"
+    <div data-aos="fade" data-aos-duration="2000"
+      class="flex items-center text-center w-full h-full bg-[#292929] text-[#a2a2a2] text-[4.6rem] font-Montserrat p-10 rounded-xl"
     >
       "EMPOWER OTHERS; YOUR SUPPORT CAN FUEL THE JOURNEY TO THEIR BRIGHTER,
       BETTER TOMORROW"
@@ -156,21 +156,27 @@ The Collection operates on the <span class="text-[#d5ff3f]">Multi-Ended Mutually
 
   <section id='contact' class="flex flex-col w-full min-h-screen h-full bg-[#171717] px-10">
     <div
-      class="flex flex-col bg-[#d5ff3f] w-[80%] mx-auto h-[600px] rounded-b-[10rem] justify-center items-center p-10  "
+      class="flex flex-col  bg-[#d5ff3f] w-[80%] mx-auto h-[600px] rounded-b-[10rem] justify-center gap-[40px] items-center p-10  "
     >
+
+    <div class="px-[30px]">
       <div
-        class="w-full flex text-[6rem] text-[#171717] font-bold font-Montserrat text-center justify-center"
-      >
-        So, how abt we talk the talk ?
-      </div>
-      <div
-        class="w-full flex text-[6rem] text-[#171717] font-bold font-Montserrat text-center justify-center"
-      >
-        Join us ASAP
-      </div>
-      <div class="flex gap-3">
+      data-aos="fade" data-aos-duration="2000"
+      class="w-full flex text-[4rem] text-[#171717] font-bold font-Montserrat text-center justify-center"
+    >
+      So, how abt we talk the talk ?
+    </div>
+    <div
+      data-aos="fade" data-aos-duration="2000"
+      class="w-full flex text-[4rem] text-[#171717] font-bold font-Montserrat text-center justify-center"
+    >
+      Join us ASAP
+    </div>
+    </div>
+
+      <div data-aos="fade" data-aos-duration="600" data-aos-delay="500" class="w-full group flex gap-6 items-center justify-center">
         <button
-          class="w-[200px] text-2xl bg-[#171717] text-[#d5ff3f] f py-2 px-4 border border-black rounded-full items-center text-center justify-center"
+          class="w-[200px] text-2xl bg-[#171717] text-[#d5ff3f] hover:scale-105 f py-2 px-4 border border-black rounded-full items-center text-center justify-center transition-all"
           (click)="router.navigate(['/contribute'])"
         >
           Contribute
@@ -178,7 +184,7 @@ The Collection operates on the <span class="text-[#d5ff3f]">Multi-Ended Mutually
 
         <a
           href="mailto:deflatedpappadam@gmail.com"
-          class="w-[200px] text-2xl bg-transparent text-black py-2 px-4 border border-black rounded-full items-center text-center justify-center"
+          class="w-[200px] text-2xl bg-transparent hover:scale-105  text-black py-2 px-4 border border-black rounded-full items-center text-center justify-center transition-all"
         >
           Get in Touch
         </a>
